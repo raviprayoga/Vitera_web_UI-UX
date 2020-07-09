@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VITERA</title>
+
+    <link rel="stylesheet" href="{{ URL::to('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{ URL::to('assets/js/bootstrap.min.js')}}"></script>
+</head>
+<nav>
+    <div class="">
+        <header class="fixed-header">
+            <nav class="navbar navbar-expand-md navbar-light" style="font-weight: bold;background-color: #19C2C8; width: 100%; height: 6vw; margin-bottom: -1vw;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav " style="margin-left: 5vw;">
+                      <li class="nav-item" style="margin-right: 3vw;">
+                           <a href="home.html"> <img src="image/logo.png" alt="" style="width:3vw ; height:3vw ;"></a>
+                      </li>  
+                      <li class="nav-item" style="margin-right: 3vw;">
+                        <a class="nav-link" style="font-size: 1vw;"  href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item" style="margin-right: 3vw;">
+                        <a class="nav-link" style="font-size: 1vw;"  href="#">About</a>
+                      </li>
+    
+                      <!-- <li class="nav-item" style="margin-left: 60vw;">
+                        <a class="nav-link" style="font-size: 1vw;"  href="login.html">Login</a>
+                      </li> -->
+                      <li class="nav-item dropdown" style="margin-left: 65vw;">
+                          <a class="nav-link " style="font-size: 1vw;"  href="#" id="navbarDropdownMenuLink"  data-toggle="dropdown" aria-haspopup="true" >
+                            <img src="image/settings.png" style="width: 1vw; height: 1vw;">
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 8vw; height:auto; margin-top: -2.3vw; margin-left:1.2vw; background-color:#19C2C8; border: solid #149ba0 5px; ">
+                            <a class="dropdown-item" style="font-size: 1vw; width: 8vw;" href="#"><img src="image/profile.png" style="width: 1vw; height: 1vw; "> Acount</a>
+                            <a class="dropdown-item" style="font-size: 1vw; width: 8vw;" href="login.html"><img src="image/logout.png" style="width: 1vw; height: 1vw; "> Log Out</a>
+                          </div>
+                      </li>
+                    </ul>
+                  </div>
+            </nav>
+        </header>
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $(".nav-item a").on("click", function(){
+            $(".nav-item").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+         });
+        });
+    </script>
+</nav>
+<body>
+    <style>
+        .btn{
+             width: 10%;
+             height: 50px;
+             background-color: #6cf383;
+             z-index: 2; 
+             position: absolute; 
+             margin-left: 45%;
+             border-radius: 80px;
+             font-family: 'Segoe UI';
+             font-weight: bold;
+             color: ghostwhite;
+         }
+    </style>
+
+<div class="">
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" style="margin-top: 0;"> 
+            <div class="item active" data-interval="3000"> 
+                <img src="image/bckg1.jpg" style="height: 900px; width: 100%;" alt="" style="width:100%;">
+            </div>
+            <div class="item" data-interval="3000"> 
+                <img src="image/backg2.jpg" style="height: 900px; width: 100%;" alt="" style="width:100%;">
+            </div>
+            <div class="item" data-interval="3000"> 
+                <img src="image/backg5.jpg" style="height: 900px; width: 100%;" alt="" style="width:100%;">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" style="z-index: 2;" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Sebelumnya</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" style="z-index: 2;" data-slide="next" >
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Selanjutnya</span>
+            </a>
+
+        {{--  button  --}}
+        <div>
+            <button class="btn" style="top: 50%;" type="submit"> <a href="codemeet.html" style="color: #fff;"> Join Meet</a></button>
+        </div>
+        <div>
+            <button class="btn" style="top: 57%;" type="submit"> <a href="createmeet.html" style="color: #fff;">Create Meet</a></button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="{{ URL::to('assets/js/bootstrap.min.js')}}"></script>
+<script src="{{ URL::to('assets/js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{ URL::to('assets/js/popper.min.js')}}"></script>
+</html>

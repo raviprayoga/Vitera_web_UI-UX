@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VITERA</title>
+
+    <link rel="stylesheet" href="{{ URL::to('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/font-awesome.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{ URL::to('assets/js/bootstrap.min.js')}}"></script>
+</head>
+<nav>
+    <div class="">
+        <header class="fixed-header">
+            <nav class="navbar navbar-expand-md navbar-light" style="font-weight: bold;background-color: #19C2C8; width: 100%; height: 6vw; margin-bottom: -1vw;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav " style="margin-left: 5vw;">
+                      <li class="nav-item" style="margin-right: 3vw;">
+                           <a href="home.html"> <img src="image/logo.png" alt="" style="width:3vw ; height:3vw ;"></a>
+                      </li>  
+                      <li class="nav-item" style="margin-right: 3vw;">
+                        <a class="nav-link" style="font-size: 1vw;"  href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item" style="margin-right: 3vw;">
+                        <a class="nav-link" style="font-size: 1vw;"  href="#">About</a>
+                      </li>
+    
+                      <!-- <li class="nav-item" style="margin-left: 60vw;">
+                        <a class="nav-link" style="font-size: 1vw;"  href="login.html">Login</a>
+                      </li> -->
+                      <li class="nav-item dropdown" style="margin-left: 65vw;">
+                          <a class="nav-link " style="font-size: 1vw;"  href="#" id="navbarDropdownMenuLink"  data-toggle="dropdown" aria-haspopup="true" >
+                            <img src="image/settings.png" style="width: 1vw; height: 1vw;">
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 8vw; height:auto; margin-top: -2.3vw; margin-left:1.2vw; background-color:#19C2C8; border: solid #149ba0 5px; ">
+                            <a class="dropdown-item" style="font-size: 1vw; width: 8vw;" href="#"><img src="image/profile.png" style="width: 1vw; height: 1vw; "> Acount</a>
+                            <a class="dropdown-item" style="font-size: 1vw; width: 8vw;" href="login.html"><img src="image/logout.png" style="width: 1vw; height: 1vw; "> Log Out</a>
+                          </div>
+                      </li>
+                    </ul>
+                  </div>
+            </nav>
+        </header>
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $(".nav-item a").on("click", function(){
+            $(".nav-item").find(".active").removeClass("active");
+            $(this).parent().addClass("active");
+         });
+        });
+    </script>
+</nav>
+<body>
+    <style>
+        body{
+            background-color: #d2dae2;
+        }
+        .btn{
+            background-color: #fff;
+            color: #8D8D8D;
+            border-radius: 30px;
+            width: 8%;
+            height: 3vw;
+            margin-top: 4vw;
+            margin-left: 37%;
+        }
+    </style>
+    
+    <div class="container-fluid">
+        <input type="email" style="width:40%;margin-left:30% ;height: 5vw;font-size: 1vw; text-align: center; border-radius: 100px; margin-top: 12vw;" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter code...">
+        <button  type="button" style = " margin-right: 4vw;" class="btn"> <a href="home.html"> Back </a> </button>
+        <button  type="button" style = " margin-left: 4vw;" class="btn"> <a href="join.html"> Join </a> </button>
+    </div>
+    </body>
+    </html>
